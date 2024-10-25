@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./plugins/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./plugins/fontawesome/css/all.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <header class="md:px-5">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+          <a href="#" class="navbar-brand d-flex align-items-center">
+            <img
+              src="https://jaybranding-intern-kappa.vercel.app/img/OGAWA%20LOGO%201.png"
+              style="width: 100%"
+              alt=""
+            />
+            <span style="color: #51843c; font-weight: bold; letter-spacing: 1px"
+              >OGAWA</span
+            >
+          </a>
+          <button
+            class="d-lg-none d-md-block bg-transparent border-0"
+            style="outline: none"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarMobile"
+            aria-controls="navbarMobile"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <img src="./assets/img/toggle.png" alt="" />
+          </button>
+          <div
+            class="collapse navbar-collapse flex-grow-0 text-center"
+            id="navbarMobile"
+          >
+            <ul class="navbar-nav d-flex justify-content-between">
+              <li class="nav-item">
+                <a class="nav-link" style="color: #222" href="#">Bộ sưu tập</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" style="color: #222" href="#"
+                  >Về chúng tôi</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" style="color: #222" href="#">Mua sắm</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" style="color: #222" href="#">Tin tức</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" style="color: #222" href="#">Cửa hàng</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" style="color: #222" href="#">Tuyển dụng</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" style="color: #222" href="#">Liên hệ</a>
+              </li>
+            </ul>
+          </div>
+          <div class="d-lg-flex d-none align-items-center" style="gap: 0 5px">
+            <button class="bg-transparent border-0">
+              <div class="text-uppercase">VIE</div>
+            </button>
+            <div class="vr vrs"></div>
+            <button class="bg-transparent border-0">
+              <div class="text-uppercase">ENG</div>
+            </button>
+            <button class="bg-transparent border-0">
+              <img src="./assets/img/search.png" alt="" />
+            </button>
+            <button class="bg-transparent border-0">
+              <img src="./assets/img/cart.png" alt="" />
+            </button>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Banner -->
+    <div
+      id="banner"
+      class="carousel carousel-dark slide"
+      data-bs-ride="carousel"
+    >
+      <!-- Content Banner -->
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="10000">
+          <div class="bgBanner"></div>
+          <div class="carousel-caption d-md-block textBanner">
+            <h5 class="fs-1">Live better and healthier</h5>
+            <div class="btnBanner">
+              <button
+                class="border-0 px-5 py-2 rounded-4 bg-white subBtnBanner"
+              >
+                Learn More
+                <i class="fa-solid fa-arrow-right-long"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <div class="bgBanner"></div>
+          <div class="carousel-caption d-md-block textBanner">
+            <h5 class="fs-1">Live better and healthier 2</h5>
+            <div class="btnBanner">
+              <button
+                class="border-0 px-5 py-2 rounded-4 bg-white subBtnBanner"
+              >
+                Learn More
+                <i class="fa-solid fa-arrow-right-long"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="bgBanner"></div>
+          <div class="carousel-caption d-md-block textBanner">
+            <h5 class="fs-1">Live better and healthier 3</h5>
+            <div class="btnBanner">
+              <button
+                class="border-0 px-5 py-2 rounded-4 bg-white subBtnBanner"
+              >
+                Learn More
+                <i class="fa-solid fa-arrow-right-long"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Prev Next -->
+      <button
+        class="carousel-control-prev d-lg-block d-none"
+        type="button"
+        data-bs-target="#banner"
+        data-bs-slide="prev"
+      >
+        <span aria-hidden="true">
+          <img src="./assets/img/arrowLeft.png" alt="" />
+        </span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next d-lg-block d-none"
+        type="button"
+        data-bs-target="#banner"
+        data-bs-slide="next"
+      >
+        <span aria-hidden="true">
+          <img src="./assets/img/arrowRight.png" alt="" />
+        </span>
+        <span class="visually-hidden">Next</span>
+      </button>
+      <!-- Dot -->
+      <div class="carousel-indicators d-lg-flex d-none">
+        <button
+          type="button"
+          data-bs-target="#banner"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#banner"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#banner"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+    </div>
+
+    <!---------------------------->
+    <main class="container mt-lg-0 mt-5">
+      <!-- Content 1 -->
+      <div class="row mt-3 text-center">
+        <div class="col-12">
+          <h1>OGAWA</h1>
+          <div class="d-flex justify-content-center">
+            <p class="p_content_1">
+              OGAWA takes pride in creating revolutionary ideas to innovate and
+              exceptional engineering practices to deliver the ultimate
+              rejuvenating experiences.
+            </p>
+          </div>
+          <div class="position-relative">
+            <img
+              src="./assets/img/content1.png"
+              class="position-relative Image1"
+              alt=""
+            />
+            <div class="img_content_1">
+              <img src="./assets/img/bgContent1.png" class="subImage1" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!---------------------------->
+      <!-- Content 2 -->
+      <div class="row align-items-center">
+        <div class="col-12 col-md-6">
+          <img src="./assets/img/content2.png" class="Image2" alt="" />
+        </div>
+        <div class="col-12 col-md-6 text-center text-md-start">
+          <div>
+            <h6 class="h6_title">MASTER DRIVE SERIES​</h6>
+            <p class="p_subtitle">More than A.I​</p>
+            <p class="p_content">
+              Discover the Technology of Tomorrow, for the Best Massage Today.
+              Each Master Drive is built to be ‘different’. Engineered with
+              state-of-the-art technology, indulge in the best massage
+              experience that is unique to each individual user.
+            </p>
+            <button class="btnContent">
+              See More <i class="fa-solid fa-arrow-right-long"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!---------------------------->
+      <!-- Content 3 -->
+      <div class="row align-items-center justify-content-between mt-lg-0 mt-5">
+        <div
+          class="col-12 col-md-6 text-center text-md-start order-lg-0 order-1"
+        >
+          <div>
+            <h6 class="h6_title">FOOT SERIES​</h6>
+            <p class="p_subtitle">Safe & Caring​</p>
+            <p class="p_content">
+              Innovative design and adaptive functionality, get total
+              rejuvenation and maximum massage coverage for your entire legs​
+            </p>
+            <button class="btnContent">
+              See More <i class="fa-solid fa-arrow-right-long"></i>
+            </button>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 order-lg-1 order-0">
+          <img src="./assets/img/content3.png" class="Image3" alt="" />
+        </div>
+      </div>
+      <!---------------------------->
+      <!-- Content 4 -->
+      <div class="row align-items-center mt-lg-0 mt-5">
+        <div class="col-12 col-md-6" style="height: 500px">
+          <img src="./assets/img/content4.png" class="Image4" alt="" />
+        </div>
+        <div class="col-12 col-md-6 text-center text-md-start">
+          <div>
+            <h6 class="h6_title">MOBILE SERIES​</h6>
+            <p class="p_subtitle">Excite your journey​</p>
+            <p class="p_content">
+              Designed specifically to meet the demands of a​ digital and
+              sedentary lifestyle.
+            </p>
+            <button class="btnContent">
+              See More <i class="fa-solid fa-arrow-right-long"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!---------------------------->
+      <!-- Content 5 -->
+      <div class="row text-center mt-4">
+        <div class="col-12">
+          <h3 class="fs-1" style="margin: 48px 0">Our Collection</h3>
+
+          <!-- Carousel cho màn hình nhỏ hơn 768px -->
+          <div
+            id="carouselExample"
+            class="carousel slide d-md-none"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="./assets/img/content5_sub_1.png"
+                  class="d-block w-100"
+                  style="height: 456px"
+                  alt="Image 1"
+                />
+                <div class="text-center mt-3" style="color: black">
+                  <h2>AI</h2>
+                  <p>VIEW ALL COLLECTIONS</p>
+                  <button class="btnContent bg-white d-none d-lg-inline-block">
+                    See More <i class="fa-solid fa-arrow-right-long"></i>
+                  </button>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <img
+                  src="./assets/img/content5_sub_2.png"
+                  class="d-block w-100"
+                  alt="Image 2"
+                />
+                <div class="text-center mt-3" style="color: black">
+                  <h2>AI</h2>
+                  <p>VIEW ALL COLLECTIONS</p>
+                  <button class="btnContent bg-white d-none d-lg-inline-block">
+                    See More <i class="fa-solid fa-arrow-right-long"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="./assets/img/content5_sub_2.png"
+                  class="d-block w-100"
+                  alt="Image 3"
+                />
+                <div class="text-center mt-3" style="color: black">
+                  <h2>AI</h2>
+                  <p>VIEW ALL COLLECTIONS</p>
+                  <button class="btnContent bg-white d-none d-lg-inline-block">
+                    See More <i class="fa-solid fa-arrow-right-long"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExample"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExample"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+          <!-- Bố cục ba cột cho màn hình lớn hơn 768px -->
+          <div class="row d-none d-md-flex">
+            <div class="col-md-4">
+              <div class="position-relative imageContent5">
+                <img
+                  src="./assets/img/content5_sub_1.png"
+                  class="img-fluid"
+                  style="height: 315px"
+                  alt="Image 1"
+                />
+                <div class="subContent5">
+                  <h2>AI</h2>
+                  <p>VIEW ALL COLLECTIONS</p>
+                  <button class="btnContent bg-white border-0">
+                    See More <i class="fa-solid fa-arrow-right-long"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="position-relative imageContent5">
+                <img
+                  src="./assets/img/content5_sub_2.png"
+                  class="img-fluid"
+                  style="height: 315px"
+                  alt="Image 1"
+                />
+                <div class="subContent5">
+                  <h2>AI</h2>
+                  <p>VIEW ALL COLLECTIONS</p>
+                  <button class="btnContent bg-white border-0">
+                    See More <i class="fa-solid fa-arrow-right-long"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="position-relative imageContent5">
+                <img
+                  src="./assets/img/content5_sub_2.png"
+                  class="img-fluid"
+                  style="height: 315px"
+                  alt="Image 1"
+                />
+                <div class="subContent5">
+                  <h2>AI</h2>
+                  <p>VIEW ALL COLLECTIONS</p>
+                  <button class="btnContent bg-white border-0">
+                    See More <i class="fa-solid fa-arrow-right-long"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!---------------------------->
+    </main>
+    <footer style="background-color: #383838; margin-top: 70px">
+      <div class="container">
+        <div class="row pt-lg-5 pt-3 pb-4">
+          <!-- Footer 1 -->
+          <div
+            class="col-lg-3 d-lg-block d-flex justify-content-between align-items-center py-4 py-lg-0"
+          >
+            <h5 style="color: #777" class="m-0">PRODUCTS</h5>
+            <ul style="list-style: none" class="p-0 d-lg-block d-none">
+              <li class="d-flex my-2" style="color: #777">
+                <div style="padding: 0 5px">
+                  <i class="fa-solid fa-angle-right"></i>
+                </div>
+                <a
+                  href="#"
+                  style="padding: 0 5px; color: #777; text-decoration: none"
+                  >Massage Chairs​</a
+                >
+              </li>
+              <li class="d-flex my-2" style="color: #777">
+                <div style="padding: 0 5px">
+                  <i class="fa-solid fa-angle-right"></i>
+                </div>
+                <a
+                  href="#"
+                  style="padding: 0 5px; color: #777; text-decoration: none"
+                  >Foot Massager​</a
+                >
+              </li>
+              <li class="d-flex my-2" style="color: #777">
+                <div style="padding: 0 5px">
+                  <i class="fa-solid fa-angle-right"></i>
+                </div>
+                <a
+                  href="#"
+                  style="padding: 0 5px; color: #777; text-decoration: none"
+                  >Sport Series​​</a
+                >
+              </li>
+              <li class="d-flex my-2" style="color: #777">
+                <div style="padding: 0 5px">
+                  <i class="fa-solid fa-angle-right"></i>
+                </div>
+                <a
+                  href="#"
+                  style="padding: 0 5px; color: #777; text-decoration: none"
+                  >Mobile Series​​</a
+                >
+              </li>
+              <li class="d-flex my-2" style="color: #777">
+                <div style="padding: 0 5px">
+                  <i class="fa-solid fa-angle-right"></i>
+                </div>
+                <a
+                  href="#"
+                  style="padding: 0 5px; color: #777; text-decoration: none"
+                  >Handy Massage</a
+                >
+              </li>
+              <li class="d-flex my-2" style="color: #777">
+                <div style="padding: 0 5px">
+                  <i class="fa-solid fa-angle-right"></i>
+                </div>
+                <a
+                  href="#"
+                  style="padding: 0 5px; color: #777; text-decoration: none"
+                  >Beauty Series​​</a
+                >
+              </li>
+              <li class="d-flex my-2" style="color: #777">
+                <div style="padding: 0 5px">
+                  <i class="fa-solid fa-angle-right"></i>
+                </div>
+                <a
+                  href="#"
+                  style="padding: 0 5px; color: #777; text-decoration: none"
+                  >Home Series​​</a
+                >
+              </li>
+            </ul>
+            <!-- Mũi tên chỉ hiển thị trên điện thoại -->
+            <i
+              class="fa-solid fa-angle-down fs-3 text-white d-block d-md-none"
+              data-bs-toggle="collapse"
+              data-bs-target="#footer1"
+            ></i>
+          </div>
+
+          <div class="col-lg-3 collapse d-md-none" id="footer1">
+            <ul style="list-style: none" class="p-0">
+              <li class="d-flex my-2" style="color: #777">
+                <div style="padding: 0 5px">
+                  <i class="fa-solid fa-angle-right"></i>
+                </div>
+                <a
+                  href="#"
+                  style="padding: 0 5px; color: #777; text-decoration: none"
+                  >Massage Chairs​</a
+                >
+              </li>
+              <li class="d-flex my-2" style="color: #777">
+                <div style="padding: 0 5px">
+                  <i class="fa-solid fa-angle-right"></i>
+                </div>
+                <a
+                  href="#"
+                  style="padding: 0 5px; color: #777; text-decoration: none"
+                  >Foot Massager​</a
+                >
+              </li>
+              <li class="d-flex my-2" style="color: #777">
+                <div style="padding: 0 5px">
+                  <i class="fa-solid fa-angle-right"></i>
+                </div>
+                <a
+                  href="#"
+                  style="padding: 0 5px; color: #777; text-decoration: none"
+                  >Sport Series​​</a
+                >
+              </li>
+              <li class="d-flex my-2" style="color: #777">
+                <div style="padding: 0 5px">
+                  <i class="fa-solid fa-angle-right"></i>
+                </div>
+                <a
+                  href="#"
+                  style="padding: 0 5px; color: #777; text-decoration: none"
+                  >Mobile Series​​</a
+                >
+              </li>
+              <li class="d-flex my-2" style="color: #777">
+                <div style="padding: 0 5px">
+                  <i class="fa-solid fa-angle-right"></i>
+                </div>
+                <a
+                  href="#"
+                  style="padding: 0 5px; color: #777; text-decoration: none"
+                  >Handy Massage</a
+                >
+              </li>
+              <li class="d-flex my-2" style="color: #777">
+                <div style="padding: 0 5px">
+                  <i class="fa-solid fa-angle-right"></i>
+                </div>
+                <a
+                  href="#"
+                  style="padding: 0 5px; color: #777; text-decoration: none"
+                  >Beauty Series​​</a
+                >
+              </li>
+              <li class="d-flex my-2" style="color: #777">
+                <div style="padding: 0 5px">
+                  <i class="fa-solid fa-angle-right"></i>
+                </div>
+                <a
+                  href="#"
+                  style="padding: 0 5px; color: #777; text-decoration: none"
+                  >Home Series​​</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!---------------------------------->
+          <div class="col-lg-3">
+            <!-- Footer 2 -->
+            <div
+              class="d-lg-block d-flex justify-content-between align-items-center py-4 py-lg-0"
+            >
+              <h5 style="color: #777" class="m-0">SHOP</h5>
+              <ul style="list-style: none" class="p-0 d-lg-block d-none">
+                <li class="d-flex my-2" style="color: #777">
+                  <div style="padding: 0 5px">
+                    <i class="fa-solid fa-angle-right"></i>
+                  </div>
+                  <a
+                    href="#"
+                    style="padding: 0 5px; color: #777; text-decoration: none"
+                    >Our Showroom​</a
+                  >
+                </li>
+                <li class="d-flex my-2" style="color: #777">
+                  <div style="padding: 0 5px">
+                    <i class="fa-solid fa-angle-right"></i>
+                  </div>
+                  <a
+                    href="#"
+                    style="padding: 0 5px; color: #777; text-decoration: none"
+                    >Shop Online​</a
+                  >
+                </li>
+              </ul>
+              <i
+                class="fa-solid fa-angle-down fs-3 text-white d-block d-md-none"
+                data-bs-toggle="collapse"
+                data-bs-target="#footer2"
+              ></i>
+            </div>
+            <div class="col-lg-3 collapse d-md-none" id="footer2">
+              <ul style="list-style: none" class="p-0">
+                <li class="d-flex my-2" style="color: #777">
+                  <div style="padding: 0 5px">
+                    <i class="fa-solid fa-angle-right"></i>
+                  </div>
+                  <a
+                    href="#"
+                    style="padding: 0 5px; color: #777; text-decoration: none"
+                    >Our Showroom​</a
+                  >
+                </li>
+                <li class="d-flex my-2" style="color: #777">
+                  <div style="padding: 0 5px">
+                    <i class="fa-solid fa-angle-right"></i>
+                  </div>
+                  <a
+                    href="#"
+                    style="padding: 0 5px; color: #777; text-decoration: none"
+                    >Shop Online​</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <!---------------------------------->
+            <!-- Footer 3 -->
+            <div
+              class="d-lg-block d-flex justify-content-between align-items-center py-4 py-lg-0"
+            >
+              <h5 style="color: #777" class="mt-lg-4 mb-0">PROMOTION</h5>
+              <ul style="list-style: none" class="p-0 d-lg-block d-none">
+                <li class="d-flex my-2" style="color: #777">
+                  <div style="padding: 0 5px">
+                    <i class="fa-solid fa-angle-right"></i>
+                  </div>
+                  <a
+                    href="#"
+                    style="padding: 0 5px; color: #777; text-decoration: none"
+                    >Monthly Promo​</a
+                  >
+                </li>
+                <li class="d-flex my-2" style="color: #777">
+                  <div style="padding: 0 5px">
+                    <i class="fa-solid fa-angle-right"></i>
+                  </div>
+                  <a
+                    href="#"
+                    style="padding: 0 5px; color: #777; text-decoration: none"
+                    >Experiential Program​​</a
+                  >
+                </li>
+              </ul>
+              <i
+                class="fa-solid fa-angle-down fs-3 text-white d-block d-md-none"
+                data-bs-toggle="collapse"
+                data-bs-target="#footer3"
+              ></i>
+            </div>
+            <div class="col-lg-3 collapse d-md-none" id="footer3">
+              <ul style="list-style: none" class="p-0">
+                <li class="d-flex my-2" style="color: #777">
+                  <div style="padding: 0 5px">
+                    <i class="fa-solid fa-angle-right"></i>
+                  </div>
+                  <a
+                    href="#"
+                    style="padding: 0 5px; color: #777; text-decoration: none"
+                    >Monthly Promo​</a
+                  >
+                </li>
+                <li class="d-flex my-2" style="color: #777">
+                  <div style="padding: 0 5px">
+                    <i class="fa-solid fa-angle-right"></i>
+                  </div>
+                  <a
+                    href="#"
+                    style="padding: 0 5px; color: #777; text-decoration: none"
+                    >Experiential Program​​</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <!---------------------------------->
+          </div>
+          <!---------------------------------->
+          <!-- Footer 4 -->
+          <div
+            class="col-lg-3 d-lg-block d-flex justify-content-between align-items-center py-4 py-lg-0"
+          >
+            <h5 style="color: #777" class="m-0">FAQ</h5>
+            <ul style="list-style: none" class="p-0 d-lg-block d-none">
+              <li class="d-flex my-2" style="color: #777">
+                <div style="padding: 0 5px">
+                  <i class="fa-solid fa-angle-right"></i>
+                </div>
+                <a
+                  href="#"
+                  style="padding: 0 5px; color: #777; text-decoration: none"
+                  >Payments​</a
+                >
+              </li>
+              <li class="d-flex my-2" style="color: #777">
+                <div style="padding: 0 5px">
+                  <i class="fa-solid fa-angle-right"></i>
+                </div>
+                <a
+                  href="#"
+                  style="padding: 0 5px; color: #777; text-decoration: none"
+                  >Terms & Conditions​​</a
+                >
+              </li>
+              <li class="d-flex my-2" style="color: #777">
+                <div style="padding: 0 5px">
+                  <i class="fa-solid fa-angle-right"></i>
+                </div>
+                <a
+                  href="#"
+                  style="padding: 0 5px; color: #777; text-decoration: none"
+                  >Privacy Policy​​​</a
+                >
+              </li>
+              <li class="d-flex my-2" style="color: #777">
+                <div style="padding: 0 5px">
+                  <i class="fa-solid fa-angle-right"></i>
+                </div>
+                <a
+                  href="#"
+                  style="padding: 0 5px; color: #777; text-decoration: none"
+                  >Trade In Policy​</a
+                >
+              </li>
+            </ul>
+            <i
+              class="fa-solid fa-angle-down fs-3 text-white d-block d-md-none"
+              data-bs-toggle="collapse"
+              data-bs-target="#footer4"
+            ></i>
+          </div>
+          <div class="col-lg-3 collapse d-md-none" id="footer4">
+            <ul style="list-style: none" class="p-0">
+              <li class="d-flex my-2" style="color: #777">
+                <div style="padding: 0 5px">
+                  <i class="fa-solid fa-angle-right"></i>
+                </div>
+                <a
+                  href="#"
+                  style="padding: 0 5px; color: #777; text-decoration: none"
+                  >Payments​</a
+                >
+              </li>
+              <li class="d-flex my-2" style="color: #777">
+                <div style="padding: 0 5px">
+                  <i class="fa-solid fa-angle-right"></i>
+                </div>
+                <a
+                  href="#"
+                  style="padding: 0 5px; color: #777; text-decoration: none"
+                  >Terms & Conditions​​</a
+                >
+              </li>
+              <li class="d-flex my-2" style="color: #777">
+                <div style="padding: 0 5px">
+                  <i class="fa-solid fa-angle-right"></i>
+                </div>
+                <a
+                  href="#"
+                  style="padding: 0 5px; color: #777; text-decoration: none"
+                  >Privacy Policy​​​</a
+                >
+              </li>
+              <li class="d-flex my-2" style="color: #777">
+                <div style="padding: 0 5px">
+                  <i class="fa-solid fa-angle-right"></i>
+                </div>
+                <a
+                  href="#"
+                  style="padding: 0 5px; color: #777; text-decoration: none"
+                  >Trade In Policy​</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!---------------------------------->
+          <!-- Footer 5 -->
+          <div class="col-lg-3 d-flex align-items-end justify-content-center">
+            <img src="./assets/img/footer.png" alt="" />
+          </div>
+          <!---------------------------------->
+        </div>
+      </div>
+      <div
+        class="text-center"
+        style="background-color: #333; padding: 15px 0; color: #777"
+      >
+        Copyright © 2022 Ogawa. All right reserved.
+      </div>
+    </footer>
+    <script src="./plugins/bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>

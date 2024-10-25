@@ -1,0 +1,157 @@
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* vr */
+.vrs {
+  width: 2px;
+  margin-left: 0.5px;
+  height: 12px;
+  margin-top: 5px;
+  background-color: #000;
+  min-height: 0;
+}
+
+.carousel-indicators [data-bs-target] {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: white !important;
+  position: relative;
+  margin-bottom: 2.5rem;
+}
+.carousel-indicators .active::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 10px; /* Kích thước vòng tròn nhỏ */
+  width: 10px;
+  border-radius: 50%;
+  background-color: #000; /* Màu của vòng tròn nhỏ */
+}
+.subBtnBanner {
+  transition: transform 0.3s ease;
+}
+.subBtnBanner:hover {
+  transform: scale(1.1);
+}
+/* Content */
+.p_content_1 {
+  max-width: 920px;
+  font-weight: 300;
+  line-height: 36px;
+  color: rgba(119, 119, 119, 1);
+  font-size: 18px;
+}
+.img_content_1 {
+  right: 0;
+  bottom: 55px;
+  left: 0;
+  position: absolute;
+}
+.h6_title {
+  font-size: 32px;
+  color: #222;
+  font-weight: 400;
+  font-family: "Abel";
+  line-height: 40.78px;
+  letter-spacing: -2%;
+}
+.p_subtitle {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 30.17px;
+  color: #777;
+}
+.p_content {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 37px;
+  color: #595959;
+}
+.btnContent {
+  padding: 12px 60px;
+  border-radius: 100px;
+  border: 1px solid;
+  background-color: transparent;
+}
+@media (max-width: 768px) {
+  /* hoặc max-width: 992px tùy vào kích thước */
+  .navbar-nav .nav-item {
+    border-bottom: 1px solid #f6f6f6;
+  }
+  .navbar-nav .nav-item:first-child {
+    border-top: 1px solid #f6f6f6;
+  }
+  .bgBanner {
+    background-color: rgba(196, 196, 196, 1);
+    height: 500px;
+  }
+  .btnBanner {
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: -50px;
+  }
+  .textBanner {
+    bottom: 8rem;
+    right: 0;
+    left: 0;
+  }
+  .subImage1 {
+    width: 100%;
+  }
+  .Image1,
+  .Image2,
+  .Image3,
+  .Image4 {
+    width: 100%;
+  }
+}
+
+/* Ẩn border khi ở màn hình lớn hơn (optional nếu không cần border trên desktop) */
+@media (min-width: 769px) {
+  .navbar-nav .nav-item {
+    border: none;
+  }
+  .bgBanner {
+    background-color: rgba(196, 196, 196, 1);
+    height: 780px;
+  }
+  .btnBanner {
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: -140px;
+  }
+  .textBanner {
+    bottom: 15rem;
+  }
+}
+/* Content 5 */
+.subContent5 {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  top: 0;
+  color: white;
+  background-color: #3a3a3a;
+  border-radius: 15px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.imageContent5 {
+  cursor: pointer;
+}
+.imageContent5:hover .subContent5 {
+  opacity: 0.9;
+}
